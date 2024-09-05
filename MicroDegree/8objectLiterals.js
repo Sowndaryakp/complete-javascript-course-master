@@ -37,9 +37,9 @@ const people = [
 ];
 
 // console.log(people[0].firstName);
-for(let i=0;i<people.length;i++){
-    console.log(people[i].firstName);
-}
+// for(let i=0;i<people.length;i++){
+//     console.log(people[i].firstName);
+// }
 
 
  
