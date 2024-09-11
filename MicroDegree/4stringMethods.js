@@ -1,11 +1,11 @@
 ///////string and string methods
-const firstName ="sowndarya";
-const lastName = "kp";
-const age = 22;
-const str = "Hello there im sowndarya";
-const tags = "web design, development, programming";
+// const firstName ="sowndarya";
+// const lastName = "kp";
+// const age = 22;
+// const str = "Hello there im sowndarya";
+// const tags = "web design, development, programming";
 
-let vall;
+// let vall;
 
 // vall = firstName + lastName;
 
