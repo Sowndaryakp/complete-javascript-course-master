@@ -1,6 +1,6 @@
 document.getElementById("loan-form").addEventListener("submit",function(e){
     document.getElementById("results").style.display = "none";
-        document.getElementById("loading").style.display = "block";
+    document.getElementById("loading").style.display = "block";
     setTimeout(calculate,2000);
     e.preventDefault();
 });
@@ -18,18 +18,19 @@ function calculate(e){
     // console.log(principal);
     const calculatedInterest = parseFloat(interest.value) / 100 / 12;
     const calculatedPayments = parseFloat(years.value) * 12;
-    const x = Math.pow(1 * calculatedInterest, calculatedPayments);
-    const monthly = (principal * x * calculatedInterest) / (x - 1);
+    const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+    const monthly = (principal * x *  calculatedInterest ) / (x - 1);
 
     if(isFinite(monthly)){
         monthlyPayment.value = monthly.toFixed(2);
-        totalAmount.value = (monthly * calculatedPayments.toFixed(2));
+        totalAmount.value = (monthly * calculatedPayments).toFixed(2);
         totalInterest.value = (monthly * calculatedPayments - principal).toFixed(2);
         
         document.getElementById("results").style.display = "block";
         document.getElementById("loading").style.display = "none";
     }else{
         showAlert("Please enter the amounts");
+        document.getElementById("loading").style.display = "none";
     }
     e.preventDefault();
 }
