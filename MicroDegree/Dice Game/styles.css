@@ -29,11 +29,14 @@ p{
 
 img{
     width: 80%;
+    /* height: 100%; */
+    
 }
 
-.footer{
-    margin-top: 5%;
+footer{
+    margin-top: 22%;
     color: #eeeeee;
     text-align: center;
     font-family: "India Flower", cursive;
+    /* text-decoration-color: chocolate; */
 }

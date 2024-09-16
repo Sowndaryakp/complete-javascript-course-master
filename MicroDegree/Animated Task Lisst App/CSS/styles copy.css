@@ -1,0 +1,87 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 2px solid #61dafb;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.todo-input:focus {
+    border-color: #4b9eea;
+}
+
+/* Button styling with animation */
+.todo-button {
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.4rem;
+    /* margin-left: 0.5rem; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-button:hover {
+    background-color: #4b9eea;
+    transform: scale(1.1); /* Grow button slightly on hover */
+}
+
+.todo-button i {
+    transition: transform 0.3s ease;
+}
+
+.todo-button:hover i {
+    transform: rotate(90deg); /* Rotate icon on hover */
+}
+
+/* Container for the todo list */
+.todo-container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Adding a slight shadow to the input and button */
+.todo-input, .todo-button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
